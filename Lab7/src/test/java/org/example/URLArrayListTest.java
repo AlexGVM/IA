@@ -36,10 +36,5 @@ public class URLArrayListTest {
         assertTrue(!list.isEmpty());
 
         assertEquals(7,list.size());
-
-        assertEquals(5,list.set(1,50));
-        assertEquals(7,list.remove(3));
-
-
     }
 }
