@@ -9,23 +9,23 @@ public class URLArrayList implements List {
 
     @Override
     public Object get(int a) throws IndexOutOfBoundsException {
-        return elements[a];
+        return elements[a]; //obtener el valor del objeto
     }
     @Override
     public boolean isEmpty() {
         return this.elements.length == 0;
-    }
+    } // tamano es igual a 0
 
     @Override
     public int size() {
         return this.elements.length;
-    }
+    } //tamano del elemento
 
     @Override
     public Object set(int a, Object O) throws IndexOutOfBoundsException {
-        Object anterior = elements[a];
+        Object anterior = elements[a]; //busca el elemento deseado
         elements[a]=O;
-        return anterior;
+        return anterior; //setear el valor de elements
     }
 
     @Override

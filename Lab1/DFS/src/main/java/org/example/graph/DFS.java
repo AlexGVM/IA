@@ -19,7 +19,7 @@ public class DFS {
 
         while(!stack.isEmpty()){ //1-verificar si puede continuar
 
-            currentNode = stack.pop();
+            currentNode = stack.pop();//sacar
             System.out.println("Visitando el nodo... " + currentNode.getValue()); //se convierte en string
             //2-verificar si se encuentra en la meta
             if(currentNode.getValue().equals(value)){

@@ -41,6 +41,7 @@ public class App
         zona1.connect(zona2);
         zona15.connect(zona16);
 
+        System.out.println("Deep First Search");
         DFS.search(16,zona21);
 
     }

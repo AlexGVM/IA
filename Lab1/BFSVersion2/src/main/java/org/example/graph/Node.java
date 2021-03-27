@@ -25,9 +25,9 @@ public class Node<T> {
     }
 
     public void connect(Node<T> node){
-        if (this == node)
+        if (this == node) //si son iguales
             throw new IllegalArgumentException("Un nodo intenta referenciarse a si mismo");
-        this.neighbour.add(node); //conexion de arriba
+        this.neighbour.add(node); //conexion de arriba //conexion de los dos lados
         node.neighbour.add(this); // conexion de abajo
 
     }

@@ -20,7 +20,6 @@ public class BFSVersion2 {
         while(!queue.isEmpty()){ //1-verificar si puede continuar
 
             currentNode = queue.remove();
-            father = currentNode;
 
             System.out.println("Visitando el nodo... " + currentNode.getValue()); //se convierte en string
 
@@ -31,9 +30,9 @@ public class BFSVersion2 {
             else{
                 if (!closed.contains(currentNode)){ // existe o no en memoria (no repetir caminos.
                     closed.add(currentNode); // 3-espacio explorado
-                    queue.addAll(currentNode.getNeighbors()); // sucesor
+                    queue.addAll(currentNode.getNeighbors()); // sucesor // expande
                 }
-                queue.removeAll(closed);
+                queue.removeAll(closed);//elimina el recien visitado
             }
 
         }

@@ -19,7 +19,7 @@ public class CSP <V,D>{
               constraints.put(variable,new ArrayList<Constraint<V, D>>());
               //cada variable debe de tener un dominio asignado
             if (!domains.containsKey(variable)){ //si alguna variable no contiene un dominio, es error
-                throw new IllegalArgumentException("La variable" +variable+ "no contiene un domonio");
+                throw new IllegalArgumentException("La variable " +variable+ " no contiene un domonio");
             }
 
         }
@@ -43,6 +43,8 @@ public class CSP <V,D>{
         }
         return true;
     }
+
+
     public Map<V,D> backtrack(){ //arranca en vacio
         return backtrack(new HashMap<V, D>());
     }

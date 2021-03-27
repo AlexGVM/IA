@@ -42,7 +42,7 @@ public class App
 
 
         System.out.println("Breadth First Search ");
-        BFSVersion2.search(16,zona21);
+        BFSVersion2.search(1, zona21);
 
     }
 }
